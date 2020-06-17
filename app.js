@@ -53,11 +53,10 @@ app.post("/compose", function (req, res) {
   });
 
   post.save(function(err){
-    if(!err){
-      res.redirect("/");
+    if (!err){
+        res.redirect("/");
     }
   });
-  res.redirect("/");
 });
 
 app.get("/posts/:postId", function(req, res){
